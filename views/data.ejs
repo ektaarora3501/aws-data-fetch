@@ -1,0 +1,25 @@
+<span>
+ this will contain all the data to be displayed and update form
+ <br><ul>
+
+<li> trip id is:
+ <%= doc.trip_id %>
+</li>
+
+<li>
+  Device is :
+  <%= doc.device %>
+</li>
+
+<li>
+  Fuel level:
+  <%= doc.fuel_level %>
+</li>
+</ul>
+<form action="/data" method="post">
+  fuel value to update
+  <input type="text" name="fuel">
+<input type="submit" value="update">
+</form>
+
+</span>
